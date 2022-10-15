@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/lin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="a"
+                android:layout_gravity="end"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/list_d1"
+                android:background="@drawable/edit_text_border"
+                android:layout_width="175dp"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:gravity="start|center"/>
+
+            <EditText
+                android:enabled="false"
+                android:inputType="number"
+                android:id="@+id/list_d2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@drawable/edit_text_border"
+                android:gravity="start|center"
+                android:padding="02dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_gravity="end"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/list_d3"
+                android:background="@drawable/edit_text_border"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+</LinearLayout>

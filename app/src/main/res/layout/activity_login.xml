@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgg">
+
+    <include layout="@layout/login_toolbar"/>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:fontFamily="sans-serif"
+            android:src="@drawable/programmer"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:id="@+id/edit_login_email"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_top"
+            android:hint="Username"
+            android:padding="15dp" />
+
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:id="@+id/edit_login_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bottom"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+
+        <TextView
+            android:textColor="#ffffff"
+            android:background="@drawable/edittext_border"
+            android:text="Login"
+            android:gravity="center"
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+  </LinearLayout>

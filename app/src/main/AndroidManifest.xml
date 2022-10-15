@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sonkamble.invoice">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b"/>
+    </queries>
+    <application
+        android:defaultToDeviceProtectedStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@drawable/menureport"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/menureport"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MenuCard">
+
+        <activity android:name="com.sonkamble.invoice.Login"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sonkamble.invoice.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.sonkamble.invoice.Add_Food_Group"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.sonkamble.invoice.Add_Item"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.sonkamble.invoice.Food_Group_Reports"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.sonkamble.invoice.Item_Reports"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.sonkamble.invoice.Table_Bill"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.sonkamble.invoice.TableBill_Enquiry"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

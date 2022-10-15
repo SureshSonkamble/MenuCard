@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <Button
+        android:drawableRight="@drawable/icon_popoup_cancel"
+        android:id="@+id/btn_operation_cancle"
+        android:layout_width="match_parent"
+        android:text="Update / Delete"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                card_view:cardBackgroundColor="#FFFFFF"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="Cottage Code :"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:id="@+id/txt_code"
+                            android:text="sss"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="Item Name :"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:id="@+id/txt_name"
+                            android:text="sss"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:text="Item Rate :"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:id="@+id/txt_rate"
+                            android:inputType="number"
+                            android:text="sss"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:text="Item Qty :"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:gravity="center"
+                            android:id="@+id/txt_qty"
+                            android:inputType="number"
+                            android:text="sss"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:text="Item Value :"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:id="@+id/txt_value"
+                            android:inputType="number"
+                            android:text="sss"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+      <LinearLayout
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="02dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="05dp"
+            android:backgroundTint="#1C6313"
+            android:gravity="center"
+            android:text="Update"
+            android:textColor="#ffffff" />
+          <Button
+              android:id="@+id/btn_del"
+              android:layout_width="150dp"
+              android:layout_height="45dp"
+              android:layout_gravity="center"
+              android:layout_marginLeft="12dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="05dp"
+              android:backgroundTint="#FFAA1B11"
+              android:gravity="center"
+              android:text="Delete"
+              android:textColor="#ffffff" />
+         <!-- <Button
+              android:id="@+id/btn_scan"
+              android:layout_width="200dp"
+              android:layout_height="35dp"
+              android:layout_gravity="center"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="05dp"
+              android:background="@drawable/edittext_border"
+              android:gravity="center"
+              android:text="Continue To Scan"
+              android:textColor="#ffffff" />-->
+      </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
